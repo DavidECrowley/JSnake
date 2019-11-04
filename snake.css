@@ -1,0 +1,41 @@
+body {
+    background-color: #87D37C;
+}
+
+canvas {
+    display: block;
+    background: #ECF0F1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title{
+    font-size: 45px;
+    display: inline;
+    color: yellow;
+}
+
+header{
+    /*-webkit-animation  ~ for Chrome, safari, opera*/
+    -webkit-animation: change-colour 30s linear infinite;
+    text-align: center;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+@-webkit-keyframes change-colour {
+    0%, 100%{background: #87D37C;}
+        25% {background: #2ABB9B;}
+        50% {background: #00B16A;}
+        75% {background: #019875}
+}
+
+div {
+    display: inline-block;
+    width: 1px;
+    transition: width 5s;
+}
+
+div:hover {
+    width: 500px;
+}
